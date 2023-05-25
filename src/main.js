@@ -1,8 +1,9 @@
-import classes from "./main.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.js";
 
-document.querySelector('#app').innerHTML = `
+const app = document.querySelector("#app");
+import AboutPage from "./pages/About";
+import HomePage from "./pages/Home";
+import render from "./utilities";
 
-    <div class="${classes.red}">
-    hello world
-    </div>
-`
+render (AboutPage, app);
